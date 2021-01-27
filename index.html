@@ -4,13 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Practicando Git</title>
+    <style>
+        body {
+            background-color: #e0b985;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        h1, h2 {
+            text-align: center;
+            text-transform: uppercase;
+            margin: 2rem 0;
+        }
+        img {
+            max-width: 100%;
+        }
+        p {
+            margin: 1rem 0;
+            font-size: 1.6rem;
+            text-align: justify;
+            background-color: #e1e1e1;
+            padding: 1rem;
+            border-radius: .5rem;
+        }
+        .hero {
+            width: 100vw;
+            height: 300px;
+        }
+        .perfil-ingeniero {
+            width: 70%;
+            margin: 0 auto;
+        }
+        
+        @media (min-width: 768px) {
+            body {
+                background-color: #cfda9f;
+            }
+            .img-ingeniero {
+                width: 150px;
+            }
+            .perfil-ingeniero {
+                display: flex;
+                width: 80%;
+                margin: 0 auto;
+            }
+            p {
+                margin-left: 3rem;
+            }
+        }
+    </style>
 </head>
 <body>
     <h1>Día del Ingeniero</h1>
-    <img src="dia-ingeniero.jpg" alt="">
-
+    <img src="dia-ingeniero.jpg" alt="" class="hero">
+    
     <h2>Ing. Manuel Romero</h2>
-    <img src="MR.jpg" alt="">
-    <p>Hola, soy venezolano, tengo 25 años. Mi formación académica fue en LUZ, estudiando en la escuela de Eléctrica de la facultad de Ingeniería.</p>
+    <div class="perfil-ingeniero">
+        <img src="MR.jpg" alt="" class="img-ingeniero">
+        <p>Hola, soy venezolano, tengo 25 años. Mi formación académica fue en LUZ, estudiando en la escuela de Eléctrica de la facultad de Ingeniería.</p>
+    </div>
 </body>
 </html>
